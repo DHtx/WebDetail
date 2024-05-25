@@ -1,0 +1,248 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+
+.wrap{
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.product-intro{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.preview-wrap{
+    width: 352px;
+    height: 500px;
+    background-color: palegoldenrod;
+    padding-bottom: 15px;
+
+    /*浮动,不浮动可能一行放不下三个部分*/
+    float: left;
+}
+
+.itemInfo-wrap{
+    width: 590px;
+    height: 800px;
+    margin-left: 30px;
+    margin-right: 24px;
+    background-color: paleturquoise;
+    float: left;
+}
+.track{
+    width: 210px;
+    height: 600px;
+    background-color: pink;
+    float: left;
+}
+
+.main-img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    background-color: skyblue;
+}
+.main-img img{
+    width: 350px;
+    height: 350px;
+}
+
+.spec-list{
+    position: relative;
+    width: 352px;
+    height: 54px;
+    margin-bottom: 18px;
+    background-color: #cccccc;
+
+}
+
+.prev,.next{
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+
+    cursor: pointer;
+
+    width: 22px;
+    height: 32px;
+
+    background-color: #cccccc;
+    background-image: url("./../images/jiantou.png") ;
+    background-size: 44px 48px;
+
+    background-repeat: no-repeat;
+}
+
+.prev{
+    left: 0;
+    background-position: -2px -9px;
+}
+
+
+.next{
+    right: 0;
+    background-position: -19px -9px;
+
+}
+
+
+.spec-items{
+    position: relative;
+    width: 290px;
+    height: 54px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+.spec-items ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 406px;
+    height: 54px;
+    background-color: skyblue;
+
+    /*移动太快，过渡一下*/
+    transition:all 0.5s ;
+}
+
+.spec-items ul li{
+    width: 54px;
+    height: 54px;
+    margin: 0 2px;
+    float: left;
+    cursor: pointer;
+    list-style: none;
+}
+.spec-items ul li img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffffff;
+}
+
+
+/*优先级比.spec-items ul li img高*/
+/*.spec-items ul .img-hover img{*/
+/*    border: 3px solid #e53e41;*/
+/*}*/
+
+.spec-items ul li img:hover{
+    border: 3px solid #e53e41;
+}
+
+/*放大镜*/
+.zoom-pup{
+    /*隐藏*/
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 236px;
+    height: 236px;
+    background-color: gold;
+
+    /*透明度*/
+    opacity: 0.5;
+}
+.zoom-div{
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 351px;
+
+    width: 540px;
+    height: 500px;
+    background-color:red;
+
+
+    /*溢出部分隐藏*/
+    overflow: hidden;
+}
+
+.zoom-div img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 800px;
+}
+
+.blank{
+    width: 100%;
+    height: 500px;
+    background-color: purple;
+}
+
+.chose-amount{
+    position: relative;
+    top: 1px;
+
+    width: 58px;
+    height: 44px;
+    border:1px solid #ccc;
+    margin-right: 10px;
+    background-color: red;
+}
+
+.buy-num{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    text-align: center;
+
+    width: 43px;
+    height: 42px;
+
+    padding: 1px 2px;
+    line-height: 42px;
+    border: 0;
+}
+
+
+
+.reduce,.add{
+    position: absolute;
+
+    text-decoration: none;
+    text-align: center;
+
+
+
+
+
+    width: 15px;
+    height: 22px;
+    border: 1px solid #ccc;
+
+
+    color: black;
+    line-height: 22px;
+    background-color: #f1f1f1;
+
+
+}
+.reduce{
+    right: -1px;
+    bottom: -1px;
+
+}
+
+.add{
+    top: -1px;
+    right: -1px;
+
+}
+.disabled{
+    color: #ccc;
+    cursor: not-allowed;
+}
